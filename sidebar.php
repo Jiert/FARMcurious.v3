@@ -9,7 +9,11 @@
 
 <div id="sidebar" class="">
 	
-
+		    	<div id="social">
+		    		<img src="http://dummyimage.com/30x30/cccccc/fff" />
+					<img src="http://dummyimage.com/30x30/cccccc/fff" />
+					<img src="http://dummyimage.com/50x30/cccccc/fff" />
+				</div><!-- social -->
 		
 	<div id="twitterFeed" class="sideBarBox">
 		
@@ -17,7 +21,7 @@
 		<div id="twitterBox">
 			
 			<script src="http://widgets.twimg.com/j/2/widget.js"></script>	
-			<script>
+			<script>/*
 				new TWTR.Widget({
 				  version: 2,
 				  type: 'profile',
@@ -46,7 +50,7 @@
 				    behavior: 'all'
 				  }
 				}).render().setUser('farmcurious').start();
-			</script>
+			*/</script>
 			
 		</div><!-- twitterBox -->
 	</div><!-- twitterFeed -->

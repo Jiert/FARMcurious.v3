@@ -109,7 +109,7 @@ ul.menu li a {
     color: #FFFFFF;
     float: left;
     margin: 5px;
-    padding: 7px 8px;
+    padding: 7px 15%;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 -1px 0 #4C9021;
@@ -166,37 +166,31 @@ ul.sub-menu li a {
 
 /***** HEADER *****/
 
-#headerWrapper {
-	width: 100%;
+#navWrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#fixedNav {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 #header {
-    margin: 0 auto;
-    padding: 0 15px 15px;
-    position: relative;
-    width: 95%;
-    max-width: 1200px;
+	width: 100%;
+	border: solid 1px #ccc;
+	float: left;
 }
 
 #header h2 {
     float: left;
-    margin: 55px 0 10px 10px;
+    margin: 5px;
 }
 
 
-#social {
-    border: 1px solid #DEDEDE;
-    border-radius: 4px 4px 4px 4px;
-    float: right;
-    height: 40px;
-    margin: 73px 10px 0 0;
-    padding: 5px;
-    width: 280px;
-}
-
-#social img {
-	margin: 5px;
-}
 
 #logoSmall {
     background-image: url("images/logo-small.png");
@@ -220,16 +214,11 @@ ul.sub-menu li a {
 #header p {
     float: left;
     font-family: georgia;
-    margin: 65px 20px 0;
+    margin: 10px;
 }
 
 
-#fixedNav {
-    position: fixed;
-    width: 95%;
-    z-index: 999;
-    max-width: 1200px;
-}
+
 
 #cart {
 	float: right;
@@ -239,16 +228,18 @@ ul.sub-menu li a {
 
 #contentWrapper {
     clear: both;
-    margin: 125px auto 20px;
+    margin: 59px auto 20px;
     max-width: 1200px;
-    width: 95%;
+    width: 100%;
+    overflow: hidden;
 }
 
 #content {
     float: left;
-    margin-right: 1%;
-    padding: 0 1%;
-    width: 72%;
+    /*margin-right: 1%;*/
+    /*padding: 0 1%;*/
+    width: 70%;
+    /*height: 900px;*/
 }
 
 #content h3 {
@@ -260,8 +251,8 @@ ul.sub-menu li a {
     background-color: #FFFFFF;
     border: 1px solid #DEDEDE;
     border-radius: 4px 4px 4px 4px;
-    float: left;
-    margin: 73px 20px 0 60px;
+    float: right;
+    margin: 10px;
     padding: 5px;
     width: 374px;
 }
@@ -302,11 +293,42 @@ ul.sub-menu li a {
 
 /***** SIDEBAR *****/
 
+
+#social {
+    border: 1px solid #DEDEDE;
+    border-radius: 4px 4px 4px 4px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    width: 90%;
+    max-width: 280px;
+}
+
+#social img {
+	margin: 5px;
+}
+
+
 #sidebar {
+    border: 1px solid #CCCCCC;
     float: right;
-    margin-right: 1%;
-    max-width: 290px;
-    width: 24%;
+    /*margin-right: 1%;*/
+    overflow: hidden;
+    width: 28%;
+    min-width: 250px;
+}
+
+.advertisement {
+	text-align: center;
+	font-size: 13px;
+}
+
+#ad {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    margin: 0 auto;
+    padding: 5%;
+    width: 250px;
 }
 
 /***** SLIDER *****/
@@ -418,3 +440,89 @@ ul.sub-menu li a {
 }
 
 #articleSlideShow .gallery-caption {display: none;}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 1100px) {
+	ul.menu li a {padding: 7px 9%;}
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+	#ad {
+		padding: 0;
+	}
+	
+	ul.menu li a {
+		padding: 7px 5%;
+		margin: 5px 2px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#content{
+		width: 68%;
+	}
+	
+		ul.menu li a {
+		font-size: 13px;
+    	margin: 5px 1px	
+	}
+}
+
+
+@media screen and (max-width: 860px) {
+	
+	#content{
+		width: 67%;
+	}
+	
+
+
+}
+
+@media screen and (max-width: 800px) {
+	
+	#content{
+		width: 100%;
+		/*padding: 0 1%;*/
+	}
+	
+	#sidebar{
+		width: 100%;
+
+		clear: both;
+	
+		/* Additional styling for our new layout */
+		border-top: 1px solid #ccc;
+		margin-top: 20px;
+	}
+
+	#cart {
+		width: 180px;
+	}
+	
+	.override #googlecart-widget-head {
+		width: 180px;
+	}
+	
+	.override #googlecart-widget-body {
+		width: 250px;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	#cart {
+	    float: left;
+	    margin: 5px;
+    }
+}
+
+@media screen and (max-width: 660px){
+	#contentWrapper{
+		margin-top: 87px;
+	}
+}

@@ -76,83 +76,43 @@
 	</head>
 
 	<!-- begin body -->
-	<body>
-	
-		<div id="fb-root"></div>
-	
-		<!-- Facebook -->
-		<?php /*
-		<script>
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
+	<body>	
 		
-		<!-- Twitter -->
-		<script>
-			!function(d,s,id){
-				var js,fjs=d.getElementsByTagName(s)[0];
-				if(!d.getElementById(id)){
-					js=d.createElement(s);js.id=id;
-					js.src="//platform.twitter.com/widgets.js";
-					fjs.parentNode.insertBefore(js,fjs);
-				}
-			}(document,"script","twitter-wjs");
-		</script>		
-
-		<!-- Google -->
-		<script type="text/javascript">
-		  (function() {
-		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		    po.src = 'https://apis.google.com/js/plusone.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-		  })();
-		</script>
-		*/
-		?>
-		
-		<div id="headerWrapper">
-			<div id="header">
-		    	
-		    	<div id="fixedNav">			    	
-			    	<div id="nav">
-			    		
-			    		<div id="logoSmall"></div>					
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>		
-					
-						<div id="cart">
-							<div id="googlecart-widget">
-								<script id="googlecart-script" type="text/javascript" src="http://checkout.google.com/seller/gsc/v2/cart.js?mid=233330624398126" currency="USD"></script>						
-							</div>
-						</div><!-- cart -->
-										
-					</div><!-- nav -->
-			    </div><!-- fixedNav -->
-			    
-			    <h2><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h2>
-		    	<p><?php bloginfo('description'); ?></p>
-		    	
-		    	<div id="search">	    	
-				<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
-					<div>
-						<input type="text" id="searchfield" value="" name="s" />
-						<input type="submit" id="searchsubmit" value="Search" />
-					</div>
-				</form>
-				</div>
-		    	
-		    	
-		    	<div id="social">
-		    		<img src="http://dummyimage.com/30x30/cccccc/fff" />
-					<img src="http://dummyimage.com/30x30/cccccc/fff" />
-					<img src="http://dummyimage.com/50x30/cccccc/fff" />
-				</div><!-- social -->
-		    </div><!-- header -->
-		 </div><!-- headerWrapper -->   
+		<div id="navWrapper">   	
+	    	<div id="fixedNav">			    	
+		    	<div id="nav">
+		    		
+		    		<div id="logoSmall"></div>					
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>		
+				
+					<div id="cart">
+						<div id="googlecart-widget">
+							<script id="googlecart-script" type="text/javascript" src="http://checkout.google.com/seller/gsc/v2/cart.js?mid=233330624398126" currency="USD"></script>						
+						</div>
+					</div><!-- cart -->
+									
+				</div><!-- nav -->
+		    </div><!-- fixedNav -->
+		</div><!-- navWrapper -->     
 
 
 		<div id="contentWrapper">
+		
+			<div id="content">
+			
+				<div id="header">    
+			    
+				    <h2><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h2>
+			    	<p><?php bloginfo('description'); ?></p>
+			    	
+			    	<div id="search">	    	
+						<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+							<div>
+								<input type="text" id="searchfield" value="" name="s" />
+								<input type="submit" id="searchsubmit" value="Search" />
+							</div>
+						</form>
+					</div>
+			    
+			    </div><!-- header -->
+		
