@@ -180,11 +180,10 @@ ul.sub-menu li a {
 }
 
 #header {
-    border: 1px solid #CCCCCC;
     float: left;
-    margin: 1% 2%;
-    padding: 1%;
-    width: 94%;
+    margin: 0 0 0 2%;
+    padding: 0;
+    width: 98%;
 }
 
 #header h2 {
@@ -254,9 +253,9 @@ ul.sub-menu li a {
     border: 1px solid #DEDEDE;
     border-radius: 4px 4px 4px 4px;
     float: right;
-    margin: 10px;
-    padding: 5px;
-    width: 374px;
+    margin: 1% 0;
+    padding: 0.1%;
+    /*width: 374px;*/
 }
 
 #searchfield {
@@ -271,7 +270,7 @@ ul.sub-menu li a {
     height: 22px;
     margin: 5px;
     padding: 3px;
-    width: 250px;
+    /*width: 250px;*/
 }
 
 #searchsubmit {
@@ -450,6 +449,12 @@ ul.sub-menu li a {
 
 @media screen and (max-width: 1100px) {
 	ul.menu li a {padding: 7px 9%;}
+
+	#searchsubmit {
+		padding: 0 3px 3px;
+	}
+
+
 }
 
 
@@ -464,6 +469,8 @@ ul.sub-menu li a {
 		padding: 7px 5%;
 		margin: 5px 2px;
 	}
+	
+	
 }
 
 @media screen and (max-width: 900px) {
@@ -516,6 +523,8 @@ ul.sub-menu li a {
 	.override #googlecart-widget-body {
 		width: 250px;
 	}
+	
+
 
 }
 
