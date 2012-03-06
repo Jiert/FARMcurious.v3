@@ -292,6 +292,17 @@ ul.sub-menu li a {
     text-shadow: 0 -1px 0 #4C9021;	
 }
 
+/***** HOME PAGE *****/
+
+.homePageSection {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin: 4% 2%;
+    padding: 2%;
+    width: 60%;
+}
+
 /***** SIDEBAR *****/
 
 
@@ -325,12 +336,31 @@ ul.sub-menu li a {
 	font-size: 13px;
 }
 
+#twitterFeed {
+	max-width: 280px;
+	width: 250px;
+	margin: 0 auto 20px;
+	background-color: #eee;
+	border: solid 1px #ccc;
+	padding: 5%;
+}
+
 #ad {
     background-color: #EEEEEE;
     border: 1px solid #CCCCCC;
     margin: 0 auto;
     padding: 5%;
     width: 250px;
+}
+
+#sandBox {
+	margin: 20px auto;
+	max-width: 280px;
+	padding: 5px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	width: 90%;
+	
 }
 
 /***** SLIDER *****/
@@ -347,6 +377,35 @@ ul.sub-menu li a {
 
 .thumbnail {float: left;}
 
+
+/***** EVENTS *****/
+
+#events {
+    float: left;
+    margin: 4% 1%;
+    width: 29%;
+}
+
+/***** READING *****/
+
+#reading {
+    margin: 10px auto;
+    padding: 5px;
+    width: 90%;
+    max-width: 280px;
+}
+
+#readingBox {
+	float: left;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#readingBox .product {
+    float: left;
+    margin: 4%;
+    width: 92%;
+}
 
 /********** ARTICLE SINGLE **********/
 
@@ -444,6 +503,24 @@ ul.sub-menu li a {
 }
 
 #articleSlideShow .gallery-caption {display: none;}
+
+
+/***** FOOTER *****/
+
+#footer {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin: 1%;
+    max-width: 1200px;
+    padding: 2%;
+    width: 94%;
+}
+
+#support {
+	
+}
+
 
 /***** RESPONSIVE *****/
 

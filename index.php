@@ -90,7 +90,7 @@ if ($domain == 'localhost:8888') {
 	<!-- Latest Blog Posts -->
 	<div class="homePageSection">
 		<h2>Latest from the Blog:</h2>
-		<?php query_posts($query_string . '&cat=' . $blogCategoryID . '&posts_per_page=2'); ?>
+		<?php query_posts($query_string . '&cat=' . $blogCategoryID . '&posts_per_page=3'); ?>
 		<?php if (have_posts()) : ?>
 			<h3 class="ribbon">Inspiration:</h3>
 			<a href="<?php bloginfo('url');?>/inspire" class="seeMore button">See more!</a>
@@ -110,6 +110,14 @@ if ($domain == 'localhost:8888') {
 		<?php else : ?>
 			<p>Oops! Something's missing, we're working on it!</p>
 		<?php endif; ?>
+	</div>
+	
+	<div id="events">
+		<h2>Upcoming Events</h2>
+		<h3>DIY Mozzarella Class - March 11, 2012 (2:30-5pm)</h3>
+		<img src="http://dummyimage.com/250x250/cccccc/fff" />
+		<h3>Backyard Chickens Class - April 1, 2012 (2-5pm)</h3>
+		<img src="http://dummyimage.com/250x250/cccccc/fff" />
 	</div>
 
 
