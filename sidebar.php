@@ -92,9 +92,9 @@
 					<div class="thumbnail">
 						<a href="<?php the_permalink(); ?> "><img class="product-image" src="<?php echo get_post_meta($post->ID, "Product_Thumbnail", $single = true); ?>"/></a>
 					</div><!-- thumbnail -->
-					
+					<a href="<?php the_permalink(); ?>"><p class="product-title"><?php the_title(); ?></p></a>
 					<div class="data-cell">
-						<a href="<?php the_permalink(); ?>"><p class="product-title"><?php the_title(); ?></p></a>
+						
 						<div class="product-price"><?php echo get_post_meta($post->ID, "Product_Price", $single = true); ?></div>
 						<div class="product-shipping"><?php echo get_post_meta($post->ID, "Product_Shipping", $single = true); ?></div>
 						<div role="button" alt="Add to cart" tabindex="0" class="googlecart-add-button"></div>

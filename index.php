@@ -81,19 +81,12 @@ if ($domain == 'localhost:8888') {
 		
 		</div><!-- featured -->
 	
-		    	
-
-	
-	
-
 	
 	<!-- Latest Blog Posts -->
 	<div class="homePageSection">
 		<h2>Latest from the Blog:</h2>
 		<?php query_posts($query_string . '&cat=' . $blogCategoryID . '&posts_per_page=3'); ?>
 		<?php if (have_posts()) : ?>
-			<h3 class="ribbon">Inspiration:</h3>
-			<a href="<?php bloginfo('url');?>/inspire" class="seeMore button">See more!</a>
 			<?php while (have_posts()) : the_post(); ?> 
 				<div class="post" id="post-<?php the_ID(); ?>">  
 					<h2 class="clear"><a href="<?php the_permalink(); ?> "><?php the_title(); ?></a></h2>

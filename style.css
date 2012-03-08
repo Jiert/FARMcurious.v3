@@ -375,7 +375,10 @@ ul.sub-menu li a {
     width: 92%;
 }
 
-.thumbnail {float: left;}
+.thumbnail {
+    float: left;
+    margin: 0 20px 10px;
+}
 
 
 /***** EVENTS *****/
@@ -408,6 +411,15 @@ ul.sub-menu li a {
 }
 
 /********** ARTICLE SINGLE **********/
+
+.post h2 {
+	margin: 10px;
+}
+
+.post h2 a {
+	font-family: Georgia;
+	font-size: 20px;
+}
 
 .post p {
     color: #333333;
@@ -453,6 +465,35 @@ ul.sub-menu li a {
 #multimedia a {
 	cursor: pointer;
 }
+
+/***** PRODUCT *****/
+
+.homePagePost p {
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+.product-title a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.data-cell {
+	float: left;
+}
+
+.data-cell .product-price {
+    font-family: Georgia;
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-title {
+}
+
+
+
 
 
 /* the overlayed element */
