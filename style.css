@@ -35,7 +35,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height: 1;
 	color: black;
-	background: white;
 }
 ol, ul {
 	list-style: none;
@@ -60,16 +59,21 @@ blockquote, q {
 
 img { max-width: 100%; }
 
+
+html {
+	background-image: url(images/paper_tile.png);
+}
+
 /***** NAVIGATION *****/
 
 #nav {
-    background-color: #EEEEEE;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 1px 1px 3px #666666;
     display: block;
     float: left;
-    min-height: 45px;
+    height: 40px;
     width: 100%;
+        background: none repeat scroll 0 0 #D7AE74;
+    border-bottom: 1px dashed #FFFFFF;
+    box-shadow: 1px 1px 3px #AAAAAA;
 }
 
 #nav div {}
@@ -94,6 +98,7 @@ ul.menu li a {/*
 
 
 ul.menu li a {
+    /*
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -102,29 +107,42 @@ ul.menu li a {
     background-color: #7FBF4D;
     background-image: -moz-linear-gradient(center top , #7FBF4D, #63A62F);
     border-color: #63A62F #63A62F #5B992B;
+    */
     border-radius: 3px 3px 3px 3px;
+    
+    /*
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #96CA6D inset;
+    */
     color: #FFFFFF;
     float: left;
-    margin: 5px;
+    margin: 4px 5px;
     padding: 7px 15%;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0 -1px 0 #4C9021;
+   /* text-shadow: 0 -1px 0 #4C9021;*/
+    text-shadow: 0 -1px 0 #888;
+
 }
 
-
+ul.menu li.current_page_item a {
+	background: none repeat scroll 0 0 #997139;
+	box-shadow: 0 0 5px 0px #684a1f inset, 0 1px 0 0 #ddd;
+}
 
 ul.menu li a:hover {
+    /*
     background-color: #76B347;
     background-image: -moz-linear-gradient(center top , #76B347, #5E9E2E);
     box-shadow: 0 1px 0 0 #8DBF67 inset;
+    */
+    background: none repeat scroll 0 0 #a97f45;
     cursor: pointer;
 }
 
 ul.menu li a:active {
+	/*
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -133,7 +151,10 @@ ul.menu li a:active {
     border-color: #5B992B #5B992B #538C27;
     border-style: solid;
     border-width: 1px;
-    box-shadow: 0 0 8px 4px #548C29 inset, 0 1px 0 0 #EEEEEE;
+    */
+    /*box-shadow: 0 0 8px 4px #548C29 inset, 0 1px 0 0 #EEEEEE;*/
+    box-shadow: 0 0 5px 0px #684a1f inset, 0 1px 0 0 #ddd;
+
 }
 
 ul.sub-menu {
@@ -223,7 +244,7 @@ ul.sub-menu li a {
 
 #cart {
 	float: right;
-	margin: 6px 12px;
+	margin: 5px 10px;
 }
 
 
@@ -292,15 +313,43 @@ ul.sub-menu li a {
     text-shadow: 0 -1px 0 #4C9021;	
 }
 
+/***** RIBBON STYLES *****/
+
+.ribbonHeader {
+	border-bottom: 1px dashed;
+    background-color: #63B2D9;
+    box-shadow: 1px 1px 2px #666666;
+    color: #FFFFFF;
+    float: left;
+    margin: 0 0 20px;
+    padding: 8px;
+    width: 100%;
+}
+
+.ribbonHeaderRed {
+	border-bottom: 1px dashed;
+    background-color: #B60A00;
+    box-shadow: 1px 1px 2px #666666;
+    color: #FFFFFF;
+    float: left;
+    margin: 0 0 15px;
+    padding: 8px;
+    width: 100%;
+}
+
 /***** HOME PAGE *****/
 
 .homePageSection {
-    border: 1px solid #CCCCCC;
-    border-radius: 5px 5px 5px 5px;
     float: left;
     margin: 4% 2%;
     padding: 2%;
     width: 60%;
+}
+
+.homePageSection .post {
+    border-bottom: 1px dashed #BBBBBB;
+    margin: 15px 0;
+    padding-bottom: 10px;
 }
 
 /***** SIDEBAR *****/
@@ -328,7 +377,7 @@ ul.sub-menu li a {
     overflow: hidden;
     width: 28%;
     min-width: 250px;
-    margin: 0 1% 1% 0;
+    /*margin: 0 1% 1% 0;*/
 }
 
 .advertisement {
@@ -337,12 +386,10 @@ ul.sub-menu li a {
 }
 
 #twitterFeed {
-	max-width: 280px;
-	width: 250px;
-	margin: 0 auto 20px;
-	background-color: #eee;
-	border: solid 1px #ccc;
-	padding: 5%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px #CCCCCC;
+    margin: 0 auto 20px;
+    max-width: 280px;
 }
 
 #ad {
@@ -366,13 +413,19 @@ ul.sub-menu li a {
 /***** SLIDER *****/
 
 #featured {
-    border: 1px solid #CCCCCC;
-    border-radius: 4px 4px 4px 4px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 1px 1px 2px #CCCCCC;
     float: left;
-    margin: 1% 2%;
+    margin: 1% 3%;
     min-height: 275px;
     padding: 2%;
-    width: 92%;
+    width: 93%;
+}
+
+#featured .homePagePost p {
+	margin: 10px 15px 0 0;
+	color: #888;
 }
 
 .thumbnail {
@@ -385,9 +438,25 @@ ul.sub-menu li a {
 
 #events {
     float: left;
-    margin: 4% 1%;
-    width: 29%;
+    margin: 4% 0;
+    overflow: hidden;
+    padding: 2% 0 2% 2%;
+    width: 30%
 }
+
+#events .post {
+	border-bottom: 1px dashed #BBBBBB;
+}
+
+#events p {
+    color: #333333;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 10px 0;
+    font-family: Helvetica;
+    padding: 0;
+}
+
 
 /***** READING *****/
 
@@ -412,26 +481,41 @@ ul.sub-menu li a {
 
 /********** ARTICLE SINGLE **********/
 
+.post {
+    margin: 15px 0;
+    padding-bottom: 10px;
+}
+
 .post h2 {
 	margin: 10px;
 }
 
 .post h2 a {
-	font-family: Georgia;
-	font-size: 20px;
+    color: #63A62F;
+    font-size: 26px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #666666;
 }
 
 .post p {
-    color: #333333;
+    color: #555;
     font-family: Georgia,serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
     padding: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
 }
 
-#meta {
+.post .meta {
+    color: #888888;
+    font-family: Helvetica;
+    font-size: 13px;
+}
 
+.post .meta a {
+	text-decoration: none;
+	color: #DD603A;
 }
 
 #meta li {
@@ -471,11 +555,27 @@ ul.sub-menu li a {
 .homePagePost p {
     font-family: helvetica;
     font-size: 15px;
+    margin: 10px 0 0;
 }
 
 .product-title a {
+    color: #DD603A;
+    font-family: 'Cutive',serif;
     font-size: 25px;
+    line-height: 1.3;
+    padding: 0 0 18px;
     text-decoration: none;
+    text-shadow: 0 0 1px #333333;
+}
+
+h3.product-title a {
+    float: left;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.product-title a:hover {
+	color: #B60A00;
 }
 
 .data-cell {
@@ -483,9 +583,10 @@ ul.sub-menu li a {
 }
 
 .data-cell .product-price {
-    font-family: Georgia;
-    font-size: 25px;
-    margin: 10px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 5px;
     text-align: center;
 }
 

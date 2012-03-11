@@ -32,7 +32,7 @@
 				  type: 'profile',
 				  rpp: 4,
 				  interval: 12000,
-				  width: 250,
+				  width: 280,
 				  height: 200,
 				  theme: {
 				    shell: {

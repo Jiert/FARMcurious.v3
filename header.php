@@ -46,6 +46,8 @@
 		
 		<script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
 		
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
 		
 		
 		<!-- FlexSlider pieces http://flex.madebymufffin.com/-->

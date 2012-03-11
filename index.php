@@ -61,9 +61,9 @@ if ($domain == 'localhost:8888') {
 		
 							<div class="data-cell">
 								<div class="product-price"><?php echo get_post_meta($post->ID, "Product_Price", $single = true); ?></div>
-								<div class="product-shipping"><?php echo get_post_meta($post->ID, "Product_Shipping", $single = true); ?></div>
-								<div role="button" alt="Add to cart" tabindex="0" class="googlecart-add-button"></div>
-								<input type="hidden" class="product-weight" value="<?php echo get_post_meta($post->ID, "Product_Weight", $single = true); ?>"/>
+								<!--<div class="product-shipping"><?php //echo get_post_meta($post->ID, "Product_Shipping", $single = true); ?></div>
+								<div role="button" alt="Add to cart" tabindex="0" class="googlecart-add-button"></div>-->
+								<input type="hidden" class="product-weight" value="<?php //echo get_post_meta($post->ID, "Product_Weight", $single = true); ?>"/>
 							</div>
 						
 						</div>
@@ -84,7 +84,11 @@ if ($domain == 'localhost:8888') {
 	
 	<!-- Latest Blog Posts -->
 	<div class="homePageSection">
-		<h2>Latest from the Blog:</h2>
+		
+		<div class="ribbonHeader">
+			<h2>Latest from the Blog:</h2>
+		</div><!-- ribbonHeader -->
+		
 		<?php query_posts($query_string . '&cat=' . $blogCategoryID . '&posts_per_page=3'); ?>
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?> 
@@ -106,11 +110,20 @@ if ($domain == 'localhost:8888') {
 	</div>
 	
 	<div id="events">
-		<h2>Upcoming Events</h2>
-		<h3>DIY Mozzarella Class - March 11, 2012 (2:30-5pm)</h3>
-		<img src="http://dummyimage.com/250x250/cccccc/fff" />
-		<h3>Backyard Chickens Class - April 1, 2012 (2-5pm)</h3>
-		<img src="http://dummyimage.com/250x250/cccccc/fff" />
+		<h2 class="ribbonHeaderRed">Upcoming Events:</h2>
+		
+		<div class="post">
+			<h3 class="product-title"><a href="#">DIY Mozzarella Class - March 11, 2012 (2:30-5pm)</a></h3>
+			<img src="http://dummyimage.com/255x128/cccccc/fff" />
+			<p>One part learning, one part meeting like-minded individuals and one part culinary delight, this class will inspire you to raise your own backyard flock and reap the tasty benefits!</p>
+		</div><!-- post -->
+		
+		<div class="post">
+			<h3 class="product-title"><a href="#">Backyard Chickens Class - April 1, 2012 (2-5pm)</a></h3>
+			<img src="http://dummyimage.com/255x128/cccccc/fff" />
+			<p>One part learning, one part meeting like-minded individuals and one part culinary delight, this class will inspire you to raise your own backyard flock and reap the tasty benefits!</p>
+		</div><!-- post -->
+		
 	</div>
 
 
