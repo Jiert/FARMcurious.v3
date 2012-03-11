@@ -46,6 +46,8 @@
 		
 		<script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
 		
+		<script src="http://platform.twitter.com/widgets.js"></script>
+		
 		<!-- google font -->
 		<link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
 		
@@ -78,7 +80,16 @@
 	</head>
 
 	<!-- begin body -->
-	<body>	
+	<body>
+	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		
 		<div id="navWrapper">   	
 	    	<div id="fixedNav">			    	

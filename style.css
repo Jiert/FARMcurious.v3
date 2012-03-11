@@ -281,8 +281,6 @@ ul.sub-menu li a {
 }
 
 #search {
-    background-color: #FFFFFF;
-    border: 1px solid #DEDEDE;
     border-radius: 4px 4px 4px 4px;
     float: right;
     margin: 1% 0;
@@ -291,8 +289,12 @@ ul.sub-menu li a {
 }
 
 #searchfield {
-    border: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
+    border-top: 1px solid #BBBBBB;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #FFFFFF;
+    border-left: 1px #CCCCCC;
+   /* border-radius: 3px 3px 3px 3px;*/
+    box-shadow: 1px 1px 3px #888888 inset;
     color: #333333;
     display: block;
     float: left;
@@ -302,21 +304,21 @@ ul.sub-menu li a {
     height: 22px;
     margin: 5px;
     padding: 3px;
-    /*width: 250px;*/
+    width: 200px;
 }
 
 #searchsubmit {
     background-color: #7FBF4D;
     background-image: -moz-linear-gradient(center top , #7FBF4D, #63A62F);
     border-color: #63A62F #63A62F #5B992B;
-    border-radius: 3px 3px 3px 3px;
+   /* border-radius: 3px 3px 3px 3px;*/
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #96CA6D inset;
     color: #FFFFFF;
     float: left;
     font-size: 15px;
-    height: 30px;
+    height: 29px;
     margin: 5px;
     padding: 0 20px 3px;
     text-align: center;
@@ -367,13 +369,23 @@ ul.sub-menu li a {
 
 
 #social {
-    border: 1px solid #DEDEDE;
+    /*border: 1px solid #DEDEDE;*/
     border-radius: 4px 4px 4px 4px;
     height: 40px;
     margin: 10px auto;
     padding: 5px;
     width: 90%;
     max-width: 280px;
+}
+
+#social .fb-like {
+    float: left;
+    margin: 0 10px 15px 0;
+}
+
+#social .twitter-follow-button {
+		margin-bottom: 5px;
+
 }
 
 #social img {
@@ -392,20 +404,61 @@ ul.sub-menu li a {
 }
 
 .advertisement {
-	text-align: center;
-	font-size: 13px;
+    color: #666666;
+    font-size: 13px;
+    margin: 0 0 10px;
+    text-align: center;
 }
 
 #twitterFeed {
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 1px 1px 3px #CCCCCC;
+	clear: both;
     margin: 0 auto 20px;
     max-width: 280px;
+    overflow: hidden;
 }
 
+#twitterFeed .tweet_list {
+    padding: 5px;
+}
+
+#twitterFeed .tweet_list li {
+    border-bottom: 1px dashed #BBBBBB;
+    margin: 15px 0;
+    padding-bottom: 15px;
+}
+
+#twitterFeed .tweet_text {
+    color: #555555;
+    font-family: Georgia,serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#twitterFeed .tweet_time a {
+    color: #AAAAAA;
+    font-family: "Helvetica Neue";
+    font-size: 11px;
+    font-weight: 300;
+    margin: 0 25px;
+}
+
+#twitterFeed a {
+	color: #DD603A;
+}
+
+#twitterFeed .user a { /*
+	color: #372409;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;*/
+	display: none;    
+}
+
+
 #ad {
-    background-color: #EEEEEE;
-    border: 1px solid #CCCCCC;
+    box-shadow: 1px 1px 3px #CCCCCC inset;
     margin: 0 auto;
     padding: 5%;
     width: 250px;
@@ -420,6 +473,7 @@ ul.sub-menu li a {
 	width: 90%;
 	
 }
+
 
 /***** SLIDER *****/
 
@@ -472,24 +526,37 @@ ul.sub-menu li a {
 /***** READING *****/
 
 #reading {
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 5px;
     width: 90%;
     max-width: 280px;
+    overflow: hidden;
 }
 
 #readingBox {
-	float: left;
-    border: 1px solid #DEDEDE;
-    border-radius: 4px 4px 4px 4px;
 }
 
 #readingBox .product {
     float: left;
-    margin: 4%;
+    margin: 4% 2%;
     width: 92%;
 }
 
+#readingBox .product a {
+    color: #DD603A;
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 0 0 18px;
+    text-decoration: none;
+    text-shadow: 0 0 1px #333333;
+    font-weight: 300;
+}
+
+
+#reading .thumbnail {
+	margin: 0 10px 10px 0;
+}
 /********** ARTICLE SINGLE **********/
 
 .post {
