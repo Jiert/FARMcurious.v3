@@ -18,11 +18,12 @@
 		<div class="fb-like" data-href="http://www.facebook.com/farmcurious" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>		<a href="https://twitter.com/farmcurious" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-size="medium" data-lang="en">Follow</a>
     	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div><!-- social -->
-					
+		
+	<h1>workflow test</h1>			
 	
 	<div id="twitterFeed" class="sideBarBox">
 		<div id="twitterBox">
-			<h2 class="ribbonHeader">Tweets</h2>
+			<h2 class="ribbonHeader">@FARMcurious Tweets</h2>
 			<script type='text/javascript'>
 			    $(document).ready(function () {
 
