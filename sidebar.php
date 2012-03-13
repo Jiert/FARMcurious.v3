@@ -14,12 +14,27 @@
 	</div><!-- sandBox -->
 		    	
 	<div id="social">
+		<h2 class="ribbonHeader">Keep in Touch:</h2>
 		<!-- FaceBook -->
 		<div class="fb-like" data-href="http://www.facebook.com/farmcurious" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>		<a href="https://twitter.com/farmcurious" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-size="medium" data-lang="en">Follow</a>
     	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div><!-- social -->
-		
-	<h1>workflow test</h1>			
+			
+	<div id="emailSignUp">
+		<form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-bottom:3;">
+			<h3>Subscribe to our Newsletter!</h3>
+			
+			<div id="emialSignUpForm">
+				<input type="text" name="ea" size="20" value="" class="emailSignUpInput">
+				<input type="submit" name="go" value="Subscribe" class="submit">
+				<input type="hidden" name="m" value="1103624070277">
+				<input type="hidden" name="p" value="oi">
+			</div>
+			
+		</form>
+	</div><!-- emailSignUp -->
+	
+	
 	
 	<div id="twitterFeed" class="sideBarBox">
 		<div id="twitterBox">

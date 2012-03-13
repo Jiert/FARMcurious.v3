@@ -289,7 +289,7 @@ ul.sub-menu li a {
 }
 
 #searchfield {
-    border-top: 1px solid #BBBBBB;
+    /*border-top: 1px solid #BBBBBB;
     border-right: 1px solid #CCCCCC;
     border-bottom: 1px solid #FFFFFF;
     border-left: 1px #CCCCCC;
@@ -301,7 +301,7 @@ ul.sub-menu li a {
     font-family: helvetica;
     font-size: 16px;
     font-weight: 300;
-    height: 22px;
+    height: 18px;
     margin: 5px;
     padding: 3px;
     width: 200px;
@@ -342,12 +342,15 @@ ul.sub-menu li a {
 .ribbonHeaderRed {
 	border-bottom: 1px dashed;
     background-color: #B60A00;
+    background-image: url('images/calendar.png');
+   	background-repeat: no-repeat;
+   	background-position: right;
     box-shadow: 1px 1px 2px #666666;
     color: #FFFFFF;
     float: left;
     margin: 0 0 15px;
     padding: 8px;
-    width: 100%;
+    width: 93%;
 }
 
 /***** HOME PAGE *****/
@@ -369,13 +372,13 @@ ul.sub-menu li a {
 
 
 #social {
-    /*border: 1px solid #DEDEDE;*/
     border-radius: 4px 4px 4px 4px;
-    height: 40px;
+    height: 66px;
     margin: 10px auto;
-    padding: 5px;
-    width: 90%;
     max-width: 280px;
+    overflow: hidden;
+    padding: 12px 0;
+    width: 280px;
 }
 
 #social .fb-like {
@@ -401,6 +404,46 @@ ul.sub-menu li a {
     width: 28%;
     min-width: 250px;
     /*margin: 0 1% 1% 0;*/
+}
+
+#emailSignUp {
+    border-bottom: 1px dashed #BBBBBB;
+    clear: both;
+    margin: 0 auto 20px;
+    padding: 0 0 15px 0;
+    width: 280px;
+}
+
+#emailSignUp h3 {
+    color: #444444;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0 0 17px;
+    text-shadow: 1px 1px 0 #CCCCCC;
+}
+
+#emailSignUp #emialSignUpForm {
+}
+
+#emailSignUp #emialSignUpForm .submit {
+    background-color: #7FBF4D;
+    background-image: -moz-linear-gradient(center top , #7FBF4D, #63A62F);
+    border-color: #63A62F #63A62F #5B992B;
+   /* border-radius: 3px 3px 3px 3px;*/
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 0 #96CA6D inset;
+    color: #FFFFFF;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #4C9021;	
+}
+
+#emailSignUp #emialSignUpForm .emailSignUpInput {
+    height: 16px;
+    margin-right: 2px;
+    width: 195px;	
 }
 
 .advertisement {
