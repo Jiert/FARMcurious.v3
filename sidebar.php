@@ -22,7 +22,7 @@
 			
 	<div id="emailSignUp">
 		<form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-bottom:3;">
-			<h3>Subscribe to our Newsletter!</h3>
+			<h3>Subscribe to our Newsletter!</h3><i class="icon-envelope"></i>
 			
 			<div id="emialSignUpForm">
 				<input type="text" name="ea" size="20" value="" class="emailSignUpInput">
@@ -38,7 +38,11 @@
 	
 	<div id="twitterFeed" class="sideBarBox">
 		<div id="twitterBox">
-			<h2 class="ribbonHeader">@FARMcurious Tweets</h2>
+			<div class="ribbonHeader">
+				<h2 class="">@FARMcurious Tweets</h2>
+				<i class="icon-twitter-sign"></i>
+			</div><!-- ribbonHeader -->
+
 			<script type='text/javascript'>
 			    $(document).ready(function () {
 

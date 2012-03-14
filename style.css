@@ -311,7 +311,7 @@ ul.sub-menu li a {
     background-color: #7FBF4D;
     background-image: -moz-linear-gradient(center top , #7FBF4D, #63A62F);
     border-color: #63A62F #63A62F #5B992B;
-   /* border-radius: 3px 3px 3px 3px;*/
+    border-radius: 6px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #96CA6D inset;
@@ -335,8 +335,14 @@ ul.sub-menu li a {
     color: #FFFFFF;
     float: left;
     margin: 0 0 20px;
-    padding: 8px;
+    padding: 8px 8px 6px;
     width: 100%;
+}
+
+.icon-twitter-sign {
+    float: right;
+    font-size: 32px;
+    margin: -30px 20px 0 0;
 }
 
 .ribbonHeaderRed {
@@ -383,7 +389,9 @@ ul.sub-menu li a {
 
 #social .fb-like {
     float: left;
-    margin: 0 10px 15px 0;
+    margin: 0 15px 15px 0;
+    padding: 0 5px;
+    width: 78px;
 }
 
 #social .twitter-follow-button {
@@ -409,27 +417,35 @@ ul.sub-menu li a {
 #emailSignUp {
     border-bottom: 1px dashed #BBBBBB;
     clear: both;
-    margin: 0 auto 20px;
-    padding: 0 0 15px 0;
+    margin: 15px auto 20px;
+    padding: 0 0 15px;
     width: 280px;
 }
 
 #emailSignUp h3 {
-    color: #444444;
-    font-size: 17px;
+    color: #555555;
+    float: left;
+    font-size: 15px;
     font-weight: 300;
-    margin: 0 0 17px;
-    text-shadow: 1px 1px 0 #CCCCCC;
+    margin: 0 0 15px;
+    padding: 0 6px;
+}
+
+.icon-envelope {
+	color: #555;
+    font-size: 17px;
+    margin: 0 0 0 5px;
 }
 
 #emailSignUp #emialSignUpForm {
+    padding: 0 5px;
 }
 
 #emailSignUp #emialSignUpForm .submit {
     background-color: #7FBF4D;
     background-image: -moz-linear-gradient(center top , #7FBF4D, #63A62F);
     border-color: #63A62F #63A62F #5B992B;
-   /* border-radius: 3px 3px 3px 3px;*/
+    border-radius: 6px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 0 #96CA6D inset;
@@ -443,7 +459,7 @@ ul.sub-menu li a {
 #emailSignUp #emialSignUpForm .emailSignUpInput {
     height: 16px;
     margin-right: 2px;
-    width: 195px;	
+    width: 181px;
 }
 
 .advertisement {

@@ -38,8 +38,9 @@
 		    } ?>
 		</title>
 		
-		<!-- link to main stylesheet -->
+		<!-- style sheets -->
 		<link rel='stylesheet' href='<?php bloginfo("stylesheet_url"); ?>' type='text/css' media='screen' />
+		<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/css/font-awesome.css'>
 		
 		<!-- loads jquery -->
 		<?php wp_enqueue_script('jquery'); ?>
@@ -55,6 +56,8 @@
 		<!-- FlexSlider pieces http://flex.madebymufffin.com/-->
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/flexslider.css" type="text/css" media="screen" />
 		<script src="<?php bloginfo('template_url'); ?>/js/jquery.flexslider-min.js"></script>
+		
+		
 		
 		
 		<script type="text/javascript" charset="utf-8">
