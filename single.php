@@ -21,8 +21,8 @@ get_header();
 			
 			<div class="post" id="post-<?php the_ID(); ?>">  
 				
-				<?php the_excerpt(); ?>
-			        					        
+				<?php the_excerpt(); ?>				
+							        					        
 				<?php //Get product values
 					$myprice_string = get_post_meta($post->ID, "price", $single = true);
 				  	$myprice_values = explode(",", $myprice_string);				  					  					  			
@@ -61,6 +61,19 @@ get_header();
 				<input type="hidden" class="product-weight" value="<?php //echo get_post_meta($post->ID, "Product_Weight", $single = true); ?>"/>
 				
 				<div role="button" alt="Add to cart" tabindex="0" class="googlecart-add-button"></div>
+			
+				<div id="facebook-badge">
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="box_count" font="arial"></fb:like>
+				</div><!-- facebook-badge -->
+				
+				<div id="twitter-badge">
+					<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				</div><!-- twitter-badge -->
+				
+				<div id="stumble-badge">
+					<script src="http://www.stumbleupon.com/hostedbadge.php?s=5"></script>
+				</div>
+
 				
 			</div>
 		</div>
