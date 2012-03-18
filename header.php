@@ -94,7 +94,11 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 		
-		<div id="navWrapper">   	
+	<?php if ( is_user_logged_in() ) { ?>
+		<div id="navWrapper" class="logged-in">
+	<? } else { ?>		
+		<div id="navWrapper">
+	<? } ?>  	
 	    	<div id="fixedNav">			    	
 		    	<div id="nav">
 		    		
