@@ -6,15 +6,22 @@
  * @subpackage FanStand
  */
 ?>
+</div><!-- content -->
 
 <div id="sidebar" class="">
 	
-	<div id="sandBox">
-		<h2>Promotion!</h2>
+	<div id="sandBox" class="homePagePost">
+		<h2 class="product-title"><a href="">Half Off all Tiffens!</a></h2>
+		<p>During the month of February, our tiffen containers are half price!</p>
+		<a class="seeMore" href="#">See More...</a>
+		
 	</div><!-- sandBox -->
 		    	
 	<div id="social">
-		<h2 class="ribbonHeader">Keep in Touch:</h2>
+		<div class="ribbonHeader">
+			<h2 class="">Keep in Touch:</h2>
+			<i class="icon-comment"></i>
+		</div><!-- ribbonHeader -->
 		<!-- FaceBook -->
 		<div class="fb-like" data-href="http://www.facebook.com/farmcurious" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>		<a href="https://twitter.com/farmcurious" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-size="medium" data-lang="en">Follow</a>
     	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -22,7 +29,7 @@
 			
 	<div id="emailSignUp">
 		<form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-bottom:3;">
-			<h3>Subscribe to our Newsletter!</h3><i class="icon-envelope"></i>
+			<img src="<?php bloginfo('template_url'); ?>/images/Mail.png" alt="Subscrive to our Newsletter"/><h3>Subscribe to our Newsletter!</h3>
 			
 			<div id="emialSignUpForm">
 				<input type="text" name="ea" size="20" value="" class="emailSignUpInput">
@@ -79,7 +86,11 @@
 	
 	
 	<div id="reading" class="sideBarBox">
-		<h2 class="ribbonHeaderRed">Books:</h2>
+		<div class="ribbonHeaderRed">
+			<h2 class="">Books:</h2>
+			<i class="icon-book"></i>
+		</div><!-- ribbonHeaderRed -->
+
 		<div id="readingBox" class="">
 			<?php query_posts($query_string . '&cat=37'); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
