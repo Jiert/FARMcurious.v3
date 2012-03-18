@@ -66,6 +66,9 @@ html {
 
 /***** NAVIGATION *****/
 
+
+
+
 #nav {
     display: block;
     float: left;
@@ -205,6 +208,10 @@ ul.sub-menu li a {
     z-index: 10;
 }
 
+.logged-in {
+	top:28px !important;
+}
+
 #fixedNav {
     margin: 0 auto;
     max-width: 1200px;
@@ -335,28 +342,36 @@ ul.sub-menu li a {
     color: #FFFFFF;
     float: left;
     margin: 0 0 20px;
-    padding: 8px 8px 6px;
     width: 100%;
+}
+
+.ribbonHeader h2 {
+	float: left;
+	padding: 8px 8px 6px;
 }
 
 .icon-twitter-sign {
     float: right;
-    font-size: 32px;
-    margin: -30px 20px 0 0;
+    font-size: 29px;
+    margin: 1px 10px 0 0;
 }
 
 .ribbonHeaderRed {
 	border-bottom: 1px dashed;
     background-color: #B60A00;
-    background-image: url('images/calendar.png');
+    /*background-image: url('images/calendar.png');*/
    	background-repeat: no-repeat;
    	background-position: right;
     box-shadow: 1px 1px 2px #666666;
     color: #FFFFFF;
     float: left;
     margin: 0 0 15px;
-    padding: 8px;
     width: 93%;
+}
+
+.ribbonHeaderRed h2 {
+	float: left;
+	padding: 8px 8px 6px;
 }
 
 /***** HOME PAGE *****/
@@ -376,6 +391,12 @@ ul.sub-menu li a {
 
 /***** SIDEBAR *****/
 
+.icon-comment {
+    float: right;
+    font-size: 23px;
+    margin: 3px 10px 0;
+    padding: 0;
+}
 
 #social {
     border-radius: 4px 4px 4px 4px;
@@ -416,29 +437,36 @@ ul.sub-menu li a {
 
 #emailSignUp {
     border-bottom: 1px dashed #BBBBBB;
+    border-top: 1px dashed #BBBBBB;
     clear: both;
-    margin: 15px auto 20px;
-    padding: 0 0 15px;
-    width: 280px;
+    margin: 15px auto 30px;
+    padding: 10px 0 15px;
+    width: 270px;
+}
+
+#emailSignUp img {
+	float:left;
+   margin: 0 5px 5px 0;
 }
 
 #emailSignUp h3 {
     color: #555555;
     float: left;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
-    margin: 0 0 15px;
+    margin: 4px 0 0;
     padding: 0 6px;
 }
 
 .icon-envelope {
-	color: #555;
+    color: #555555;
+    float: left;
     font-size: 17px;
-    margin: 0 0 0 5px;
+    margin: 0 5px;
 }
 
 #emailSignUp #emialSignUpForm {
-    padding: 0 5px;
+    clear: both;
 }
 
 #emailSignUp #emialSignUpForm .submit {
@@ -524,14 +552,58 @@ ul.sub-menu li a {
 }
 
 #sandBox {
-	margin: 20px auto;
-	max-width: 280px;
-	padding: 5px;
-	border: solid 1px #ccc;
-	border-radius: 5px;
-	width: 90%;
-	
+
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 50%, #e8e8e8 51%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#efefef), color-stop(51%,#e8e8e8), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 50%,#e8e8e8 51%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#efefef 50%,#e8e8e8 51%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 50%,#e8e8e8 51%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 0%,#efefef 50%,#e8e8e8 51%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+    box-shadow: 1px 1px 2px #CCCCCC;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    margin: 15px auto 20px;
+    max-width: 280px;
+    overflow: hidden;
+    padding: 5px;
+    width: 270px;	
 }
+
+#sandBox a.seeMore {
+    color: #DD603A;
+    float: right;
+    font-size: 13px;
+    margin: 0 15px 15px;
+}
+
+#sandBox h2.product-title {
+    background-image: url("images/Fav.png");
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    float: left;
+    padding: 0 0 0 30px;
+}
+
+#sandBox h2.product-title a {
+    float: left;
+    font-size: 19px;
+    padding: 10px;
+}
+
+#sandBox p {
+    clear: both;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 0;
+    padding: 0 10px 10px;
+}
+
 
 
 /***** SLIDER *****/
@@ -593,6 +665,12 @@ ul.sub-menu li a {
 }
 
 #readingBox {
+}
+
+.icon-book {
+    float: right;
+    font-size: 23px;
+    margin: 3px 10px 0 0;
 }
 
 #readingBox .product {
