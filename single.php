@@ -24,14 +24,14 @@ get_header();
 				<?php the_excerpt(); ?>				
 							        					        
 				<?php //Get product values
-					$myprice_string = get_post_meta($post->ID, "price", $single = true);
+					$myprice_string = get_post_meta($post->ID, "custom_prices", $single = true);
 				  	$myprice_values = explode(",", $myprice_string);				  					  					  			
 					
-					$mysize_string = get_post_meta($post->ID, "size", $single = true);
+					$mysize_string = get_post_meta($post->ID, "custom_sizes", $single = true);
 					$mysize_values = explode(",", $mysize_string);
 					$arrayLength = count($mysize_values);
 					
-					$mycolor_string = get_post_meta($post->ID, "color", $single = true);
+					$mycolor_string = get_post_meta($post->ID, "custom_colors", $single = true);
 					$mycolor_values = explode(",", $mycolor_string);					
 					$colorLength = count($mycolor_values);									
 				?>		
