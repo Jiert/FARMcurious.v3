@@ -29,7 +29,7 @@
 	function add_custom_meta_box() {  
 	    add_meta_box(  
 	        'custom_meta_box', // $id  
-	        'Custom Meta Box', // $title  
+	        'Product Information: ', // $title  
 	        'show_custom_meta_box', // $callback  
 	        'post', // $page  
 	        'normal', // $context  
@@ -37,49 +37,133 @@
 	}  
 	add_action('add_meta_boxes', 'add_custom_meta_box');  
 	
+	//OLD META DATA:
+	//Product Image
+	//Product Thumbnail
+	//Product Price:  $17.00
+	//Product Weight  2
+	
+	
+	
+	//Product PRICE: $17:00
+	//Charge SHIPPING:  Y/N?
+	//PRODUCT WEIGHT: 2
+	//Charge Tax Y/N ?
+	//DISCOUNT INFO: %
+	//In stock? Y/N
+	
+	//Product Options:... need to think this one through
+	
+	//PROMOTION CODE
+	//BUYERS NOTE
+	//INSTOCK / SOLDOUT?
+	//INCLUDE KIT OR OTHER PRODUCT
+	//PRODUCT OPTIONS: COLORS, SIZE, ECT
+	
 	
 	// Field Array for custom meta boxes  
     $prefix = 'custom_';  
     $custom_meta_fields = array(  
+        
         array(  
-            'label'=> 'Text Input',  
-            'desc'  => 'A description for the field.',  
-            'id'    => $prefix.'text',  
+            'label'=> 'Product Prices:',  
+            'desc'  => 'Add a list of prices for this product separated by a comma <b><i>in the same order as the sizes.</i></b>: "$1.99, $2.99, $3.99".',  
+            'id'    => $prefix.'prices',  
             'type'  => 'text'  
-        ),  
+        ),
+        
         array(  
-            'label'=> 'Textarea',  
-            'desc'  => 'A description for the field.',  
-            'id'    => $prefix.'textarea',  
-            'type'  => 'textarea'  
-        ),  
+            'label'=> 'Product Weight:',  
+            'desc'  => 'How much does this product weigh in pounds?  Expected Value: 2.',  
+            'id'    => $prefix.'weight',  
+            'type'  => 'text'  
+        ),
+          
         array(  
-            'label'=> 'Checkbox Input',  
-            'desc'  => 'A description for the field.',  
-            'id'    => $prefix.'checkbox',  
+            'label'=> 'Free Shipping?',  
+            'desc'  => 'Click here if no shipping costs are required.',  
+            'id'    => $prefix.'shipping',  
             'type'  => 'checkbox'  
-        ),  
+        ),
+        
         array(  
-            'label'=> 'Select Box',  
-            'desc'  => 'A description for the field.',  
-            'id'    => $prefix.'select',  
-            'type'  => 'select',  
-            'options' => array (  
-                'one' => array (  
-                    'label' => 'Option One',  
-                    'value' => 'one'  
-                ),  
-                'two' => array (  
-                    'label' => 'Option Two',  
-                    'value' => 'two'  
-                ),  
-                'three' => array (  
-                    'label' => 'Option Three',  
-                    'value' => 'three'  
-                )  
-            )  
-        )  
-    );  
+            'label'=> 'Remove Tax?',  
+            'desc'  => 'Click here for no tax charges.',  
+            'id'    => $prefix.'taxexempt',  
+            'type'  => 'checkbox'  
+        ),
+        
+        array(  
+            'label'=> 'Out of stock?',  
+            'desc'  => 'Click here if this product is out  of stock.',  
+            'id'    => $prefix.'instock',  
+            'type'  => 'checkbox'  
+        ),
+        
+        array(  
+            'label'=> 'Product Discount:',  
+            'desc'  => 'Add a percent value this product should be discounted.',  
+            'id'    => $prefix.'discount',  
+            'type'  => 'text'  
+        ),
+        
+        array(  
+            'label'=> 'Product Colors:',  
+            'desc'  => 'Add a list of colors for this product separated by a comma:"Red, Blue, Green".',  
+            'id'    => $prefix.'colors',  
+            'type'  => 'text'  
+        ),
+        
+        array(  
+            'label'=> 'Product Sizes:',  
+            'desc'  => 'Add a list of sizes for this product separated by a comma: "big, bigger, biggest".',  
+            'id'    => $prefix.'sizes',  
+            'type'  => 'text'  
+        )
+         
+    );
+    
+    /*
+    	Need a way for Farmcurious to set which options are currently available for the product, which will appear in the drop down for the customer
+    	Example: What colors are available for the bamboo utensils?
+    	Super Fancy: Aero Grow bags: customer would show 20gal, 10gal, each with their own price.  That way Nicole doesn't need to add grow bag post for each size.
+    
+    	http://code.google.com/apis/checkout/developer/Google_Checkout_Shopping_Cart_Annotating_Products.html
+    	
+    	<span class="product-attr-color">Blue</span>
+    	
+    	
+    	http://codex.wordpress.org/Function_Reference/post_meta_Function_Examples
+    	
+    	
+		<div class="product">
+		  <img class="product-image" src="files/google_tshirt.jpg"/>
+		  <span class="product-title">Google T-shirt</span>
+		  Price: <span class="product-price">$12.99</span><br/>
+		  Shipping: <span class="product-shipping">$4.99</span>
+		
+		  <!-- The shopping cart automatically adds the selected color -->
+		  Color: <br/>
+		    <input class="product-attr-color" name="color" type="radio" value="blue"/> blue<br/>
+		    <input class="product-attr-color" name="color" type="radio" value="green"/> green<br/>
+		    <input class="product-attr-color" name="color" type="radio" value="red"/> red<br/>
+		
+		  <!-- The shopping cart automatically adds the selected size -->
+		  Size: <select class="product-attr-size">
+		          <option>Small</option>
+		          <option>Medium</option>
+		          <option>Large</option>
+		          <option>X-Large</option>
+		        </select> 
+		  <div role="button" alt="Add to cart" tabindex="0" class="googlecart-add-button">
+		  </div> 
+		</div>
+    
+    	How do we set different prices based on the size of a product?
+    	idea of PRICE POINTS
+    
+    
+    */
 
 
 	// The Callback for custom meta box  
